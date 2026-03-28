@@ -1,6 +1,6 @@
 # 🚀 ClinicalStream MONITOR WINDOW - FEATURES SUMMARY
 
-## ✅ **TÍNH NĂNG ĐÃ HOÀN THÀNH**
+## ✅ **COMPLETED FEATURES**
 
 ### 🎯 **1. Main Parameters Filter (48 IDs)**
 - **Pressures**: [1, 2, 3, 4, 6] - ACCESS, FILTER, EFFLUENT, RETURN, TMP
@@ -118,7 +118,7 @@ window.open_monitor_window_for_device(device)
 - Main Parameters filter (48 IDs)
 - Custom IDs input và validation
 - 6 filter types + 6 preset buttons
-- Offline monitor support với demo data
+- Offline monitor support with demo data
 # 🚀 ClinicalStream Monitor Engine - Feature Specification
 
 ## ✅ **Completed Capabilities**

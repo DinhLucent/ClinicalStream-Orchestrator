@@ -6,7 +6,7 @@ from typing import Dict, List, Optional, Tuple
 import pandas as pd
 
 class DatabaseManager:
-    """Quản lý database SQLite cho Flex Monitor"""
+    """SQLite database management for ClinicalStream"""
     
     def __init__(self, device_name: str, base_dir: str = "collected_data"):
         self.device_name = device_name

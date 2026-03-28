@@ -9,7 +9,7 @@
 
 ### **Environment Setup:**
 ```bash
-conda activate flex  # Activate conda environment named 'flex'
+conda activate clinicalstream
 python main.py       # Start GUI application
 ```
 
