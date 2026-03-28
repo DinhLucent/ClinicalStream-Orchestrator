@@ -1,0 +1,17 @@
+# ClinicalStream Device Manager v2.0 Requirements
+
+# Core dependencies
+PySide6>=6.5.0              # GUI framework
+sqlite3                     # Database (built-in Python)
+
+# Optional dependencies for enhanced functionality
+matplotlib>=3.5.0           # Chart visualization
+pandas>=1.3.0              # Data manipulation and Excel export  
+psutil>=5.8.0              # System monitoring
+
+# Development and testing
+pytest>=6.0.0              # Testing framework
+pytest-qt>=4.0.0           # Qt testing utilities
+
+# Data compression (optional)
+# zstandard>=0.15.0         # Fast compression for backup files
