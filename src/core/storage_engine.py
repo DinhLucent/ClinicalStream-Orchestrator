@@ -5,6 +5,7 @@ import uuid
 import json
 import time
 from collections import deque
+from core.advanced_database_manager import DatabaseManager
 
 RAW_BLOCK_SIZE = 64 * 1024  # 64KB
 RAW_BLOCK_INTERVAL = 60     # 60s (giảm tần suất flush vì 10s sampling)

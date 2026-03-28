@@ -457,7 +457,7 @@ class ConfigManager:
     
     def get_session_config_for_storage_engine(self):
         """Chuyển đổi SessionConfig thành format cho StorageEngine"""
-        from session_writer import SessionConfig
+        from core.session_writer import SessionConfig
         
         return SessionConfig(
             flush_interval=self.app_config.session.flush_interval_seconds,

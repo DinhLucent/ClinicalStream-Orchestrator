@@ -20,6 +20,7 @@ import struct
 import time
 import math
 import random
+from core.message_decoder import MessageDecoder
 from datetime import datetime, timezone
 
 HEADER_SIZE = 124

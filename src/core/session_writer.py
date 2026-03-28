@@ -17,7 +17,8 @@ import logging
 import queue
 from dataclasses import dataclass
 
-from advanced_database_manager import DatabaseManager, SessionMetadata, SegmentInfo
+from core.advanced_database_manager import DatabaseManager, SessionMetadata, SegmentInfo
+from core.storage_engine import StorageEngine
 
 logger = logging.getLogger(__name__)
 
@@ -136,7 +137,7 @@ class SessionWriter:
     
     def _create_new_session(self, header_dict: Dict, patient_id: str = None):
         """Tạo session mới"""
-        from advanced_database_manager import generate_session_uuid, sanitize_filename
+        from core.advanced_database_manager import generate_session_uuid, sanitize_filename
         
         # Tạo metadata
         self.session_uuid = generate_session_uuid()

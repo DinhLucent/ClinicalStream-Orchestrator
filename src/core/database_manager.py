@@ -15,20 +15,20 @@ class DatabaseManager:
         self.db_path = os.path.join(self.device_dir, "database", "monitor_data.db")
         self.sessions_db_path = os.path.join(self.device_dir, "database", "sessions.db")
         
-        # Tạo thư mục database
+        # Create database directory
         os.makedirs(os.path.dirname(self.db_path), exist_ok=True)
         
-        # Khởi tạo database
+        # Initialize database
         self.init_database()
         self.init_sessions_database()
     
     def _sanitize_name(self, name: str) -> str:
-        """Làm sạch tên thiết bị cho file path"""
+        """Sanitize device name for file path"""
         import re
         return re.sub(r'[\\/*?:"<>|]', "", name)
     
     def init_database(self):
-        """Khởi tạo database chính cho monitor data"""
+        """Initialize main database for monitor data"""
         with sqlite3.connect(self.db_path) as conn:
             # Bảng chính lưu dữ liệu monitor
             conn.execute("""

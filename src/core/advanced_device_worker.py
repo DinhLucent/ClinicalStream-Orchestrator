@@ -17,9 +17,9 @@ from datetime import datetime, timezone
 from PySide6.QtCore import QObject, Signal, Slot, QTimer
 from PySide6.QtGui import QColor
 
-from advanced_database_manager import DatabaseManager
-from session_writer import SessionWriter, SessionConfig
-from message_decoder import MessageDecoder
+from core.advanced_database_manager import DatabaseManager
+from core.session_writer import SessionWriter, SessionConfig
+from core.message_decoder import MessageDecoder
 
 logger = logging.getLogger(__name__)
 
