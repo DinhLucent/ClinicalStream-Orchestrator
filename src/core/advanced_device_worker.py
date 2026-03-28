@@ -23,11 +23,11 @@ from core.message_decoder import MessageDecoder
 
 logger = logging.getLogger(__name__)
 
-# Constants từ codebase hiện tại
-STX_MARKER = b'\x02\x00'
-HEADER_SIZE = 124
-S_RECORD_SIZE = 12
-MBL_OFFSET_IN_HEADER = 120
+# Protocol Interface Constants (Generalized for Portfolio)
+STX_MARKER = b'\x00\x00'      # Placeholder for proprietary marker
+HEADER_SIZE = 124             # Standard frame header length
+S_RECORD_SIZE = 12           # Standard record length
+MBL_OFFSET_IN_HEADER = 0      # Generalized offset
 
 # Therapy Status Constants
 STATUS_IDLE = 0
